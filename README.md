@@ -1,46 +1,51 @@
+:triangular_flag_on_post: **This package is intended for developers.** If you just want to add Chatra to your website, check our [Installation guides](https://chatra.com/help/cms/?utm_source=npm&utm_medium=readme&utm_campaign=npm) for popular e-commerce platforms and content management systems or just [add a small code snippet](https://chatra.com/help/?utm_source=npm&utm_medium=readme&utm_campaign=npm#install) to your website.
+
 <img width="100" height="100" align="right"
      alt="Chatra logo" src="https://app.chatra.io/static/win-tile.png" />
 
-# Chatra Client
+# Official Chatra module
 
-This client loads Chatra widget and passes methods to the [Javascript API](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#methods).
+This module loads Chatra widget and passes methods to the [Javascript API](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#methods).
 
-The Key Features:
+Key Features:
 
-- Easy integration to your website or web app
-- The package works perfectly with React, Angular, Vue, and other frameworks
-- The client uses ES5, so it doesn’t require any dependencies.
+- Easy integration with your website or web app
+- Works perfectly with React, Angular, Vue, and other frameworks
+- Uses ES5, so it doesn’t require any dependencies.
 
-:triangular_flag_on_post: Check our website [Installation guides](https://chatra.com/help/cms/?utm_source=npm&utm_medium=readme&utm_campaign=npm) for popular e-commerce and content management systems.
 
 ## Installation
 
-To add the chat widget to your website or web app, [sign up with Chatra](https://app.chatra.io/?utm_source=npm&utm_medium=readme&utm_campaign=npm).
+To add the chat widget to your website or web app, [sign up with Chatra](https://app.chatra.io/?utm_source=npm&utm_medium=readme&utm_campaign=npm&enroll=).
 
 If you already have an account, install the package using your favorite package manager:
 
 ```bash
-$ npm install chatra-widget --save
+$ npm install chatra
+```
+
+```bash
+$ yarn add chatra
 ```
 
 ## Configuration
 
-Step 1. Go to the [Chat Widget section](https://app.chatra.io/settings/integrations/widget/?utm_source=npm&utm_medium=readme&utm_campaign=npm) of your Chatra dashboard in another browser tab and copy the ChatraID parameter from the widget code. The parameter looks like this: ChatraID = "XXXXXXXXXXXXXXXXX", where XXXXXXXXXXXXXXXXX is what you need to copy.
+Step 1. Go to the [Preferences section](https://app.chatra.io/settings/preferences?utm_source=npm&utm_medium=readme&utm_campaign=npm#apiKeys) of your Chatra dashboard in another browser tab and copy the Public key.
 
 Step 2. Initialize the widget in your index.js or root controller
 
 __index.js__
 ```js
-let Chatra = require('chatra-client')
+let Chatra = require('chatra')
 
 let config = {
-    chatraID: 'Paste your ChatraID here'
+    chatraID: 'Paste your Public key here'
 }
 
 Chatra('init', config)
 ```
 
-:triangular_flag_on_post: You can customize the chat and button appearance, localization and lots of another settings by passing `setup` to the initialization config. Please check [Javascript API](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#api-reference) for the details.
+:triangular_flag_on_post: You can customize the chat and button appearance, localization and lots of other settings by passing `setup` to the initialization config. Please check the [Javascript API](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#api-reference) for details.
 
 __index.js__
 ```js
@@ -54,7 +59,7 @@ let config = {
 
 Step 3 _(optional)_. Call `PageView` to enable [Targeted chats & triggers](https://app.chatra.io/settings/actions/?utm_source=npm&utm_medium=readme&utm_campaign=npm)
 
-If your website or web app loads pages dynamically and updates the document’s URL without requiring a full page load, add the following method to track these views and see them in the Chatra dashboard:
+If your website or web app loads pages dynamically and updates the document’s URL without requiring a full page load, call the following method whenever the page changes to track these views and see them in the Chatra dashboard:
 
 ```js
 Chatra('pageView')
@@ -74,4 +79,4 @@ All method calls made before Chatra finished loading are put into a queue and ex
 
 ## Contact us
 
-If you have any questions feel free to [contact us](hello@chatra.com).
+If you have any questions feel free to [contact us](https://chatra.com/contact-us/).
