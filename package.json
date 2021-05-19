@@ -1,0 +1,31 @@
+{
+  "name": "chatra-client",
+  "version": "1.0.0",
+  "description": "The official Chatra Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chatr/chatra-client.git"
+  },
+  "keywords": [
+    "chatra",
+    "chat"
+  ],
+  "author": "Roger Wilco LLC <dev@chatra.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chatr/chatra-client/issues"
+  },
+  "homepage": "https://github.com/chatr/chatra-client#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-es5": "^1.2.0",
+    "eslint-plugin-es5": "^1.5.0",
+    "eslint-plugin-import": "^2.23.2"
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+
+package-lock.json
+.editorconfig
+npm-debug.log
+.eslintrc.js
+.travis.yml
+.gitignore
+.npmignore
+.vscode
+*.log
