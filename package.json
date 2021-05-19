@@ -1,5 +1,5 @@
 {
-  "name": "chatra-client",
+  "name": "chatra",
   "version": "1.0.0",
   "description": "The official Chatra Client",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chatr/chatra-client.git"
+    "url": "git+https://github.com/chatr/chatra.git"
   },
   "keywords": [
     "chatra",
@@ -17,9 +17,9 @@
   "author": "Roger Wilco LLC <dev@chatra.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chatr/chatra-client/issues"
+    "url": "https://github.com/chatr/chatra/issues"
   },
-  "homepage": "https://github.com/chatr/chatra-client#readme",
+  "homepage": "https://github.com/chatr/chatra#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.26.0",
