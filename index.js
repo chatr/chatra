@@ -8,8 +8,9 @@ var isInitialized = false;
 var init = function (data) {
     var script = document.createElement('script');
 
+    window.ChatraIntegration = data.integration;
     window.ChatraSetup = data.setup;
-    window.ChatraID = data.chatraID;
+    window.ChatraID = data.ID;
     window.Chatra = window.Chatra || function () {
         // eslint-disable-next-line id-length
         (window.Chatra.q = window.Chatra.q || []).push(arguments);
@@ -33,15 +34,16 @@ var init = function (data) {
  */
 var Chatra = function (method, data) {
     if (method === 'init') {
-        if (!data.chatraID) {
-            console.error('You must pass chatraID as argument to initialize Chatra');
+        if (!data.ID) {
+            console.error('You must pass ID as argument to initialize Chatra');
 
             return;
         }
 
         init({
-            chatraID: data.chatraID,
-            config: data.setup
+            integration: data.integration,
+            config: data.setup,
+            ID: data.ID
         });
     }
     else if (window.Chatra) {

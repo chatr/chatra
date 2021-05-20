@@ -39,7 +39,7 @@ _index.js_
 let Chatra = require('chatra')
 
 let config = {
-    chatraID: 'Paste your Public key here'
+    ID: 'Paste your Public key here'
 }
 
 Chatra('init', config)
@@ -50,10 +50,23 @@ Chatra('init', config)
 _index.js_
 ```js
 let config = {
-    chatraID: 'Paste your ChatraID here',
     setup: {
         buttonSize: 75
-    }
+    },
+    ID: 'Paste your ChatraID here'
+}
+```
+
+Moreover, you can [pass arbitrary info](https://chatra.com/help/api/#passing-arbitrary-info) using `integration` key:
+
+_index.js_
+```js
+let config = {
+    integration: {
+        name: 'Cowardly Lion',
+        email: 'cowardly_lion@gmail.com'
+    },
+    ID: 'Paste your ChatraID here'
 }
 ```
 
