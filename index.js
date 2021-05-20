@@ -42,7 +42,7 @@ var Chatra = function (method, data) {
 
         init({
             integration: data.integration,
-            config: data.setup,
+            setup: data.setup,
             ID: data.ID
         });
     }
