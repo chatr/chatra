@@ -6,7 +6,7 @@ var isInitialized = false;
  * Adds script, queue and configuration or restarts Chatra if it is loaded
  */
 var init = function (data) {
-    var script = document.createElement('script');
+    var script;
 
     window.ChatraIntegration = data.integration;
     window.ChatraSetup = data.setup;
@@ -17,6 +17,8 @@ var init = function (data) {
     };
 
     if (!isInitialized) {
+        script = document.createElement('script');
+
         isInitialized = true;
         script.async = true;
         script.src = 'https://call.chatra.io/chatra.js';
@@ -35,7 +37,7 @@ var init = function (data) {
 var Chatra = function (method, data) {
     if (method === 'init') {
         if (!data || !data.ID) {
-            console.error('You must pass ID as argument to initialize Chatra');
+            console.error('You must pass ID as an argument to initialize Chatra');
 
             return;
         }
