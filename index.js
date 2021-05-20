@@ -47,7 +47,7 @@ var Chatra = function (method, data) {
         });
     }
     else if (window.Chatra) {
-        window.Chatra(method, data);
+        window.Chatra.apply(this, arguments);
     }
     else {
         console.error("Please call Chatra('init', config) before calling " + method);
