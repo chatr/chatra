@@ -34,7 +34,7 @@ var init = function (data) {
  */
 var Chatra = function (method, data) {
     if (method === 'init') {
-        if (!data.ID) {
+        if (!data || !data.ID) {
             console.error('You must pass ID as argument to initialize Chatra');
 
             return;
@@ -50,7 +50,7 @@ var Chatra = function (method, data) {
         window.Chatra(method, data);
     }
     else {
-        console.error("Please call Chatra('init') before calling " + method);
+        console.error("Please call Chatra('init', config) before calling " + method);
     }
 };
 
