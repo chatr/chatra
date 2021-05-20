@@ -21,11 +21,11 @@ To add the chat widget to your website or web app, [sign up with Chatra](https:/
 If you already have an account, install the package using your favorite package manager:
 
 ```bash
-$ npm install chatra
+$ npm install @chatra/chatra
 ```
 
 ```bash
-$ yarn add chatra
+$ yarn add @chatra/chatra
 ```
 
 ## Configuration
