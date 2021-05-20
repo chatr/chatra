@@ -34,7 +34,7 @@ Step 1. Go to the [Preferences section](https://app.chatra.io/settings/preferenc
 
 Step 2. Initialize the widget in your index.js or root controller
 
-__index.js__
+_index.js_
 ```js
 let Chatra = require('chatra')
 
@@ -45,9 +45,9 @@ let config = {
 Chatra('init', config)
 ```
 
-:triangular_flag_on_post: You can customize the chat and button appearance, localization and lots of other settings by passing `setup` to the initialization config. Please check the [Javascript API](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#api-reference) for details.
+:triangular_flag_on_post: You can customize the chat and button appearance, localization and lots of other settings by passing `setup` to the initialization config. Please check the [Javascript API](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#api-reference) for details. Also, you can update the settings dynamically by calling `'init'` again.
 
-__index.js__
+_index.js_
 ```js
 let config = {
     chatraID: 'Paste your ChatraID here',

@@ -1,5 +1,9 @@
+var isInitialized = false;
+
+
 /*
- * Initialization method. Adds script, queue and configuration
+ * Initialization method.
+ * Adds script, queue and configuration or restarts Chatra if it is loaded
  */
 var init = function (data) {
     var script = document.createElement('script');
@@ -11,10 +15,16 @@ var init = function (data) {
         (window.Chatra.q = window.Chatra.q || []).push(arguments);
     };
 
-    script.async = true;
-    script.src = 'https://call.chatra.io/chatra.js';
+    if (!isInitialized) {
+        isInitialized = true;
+        script.async = true;
+        script.src = 'https://call.chatra.io/chatra.js';
 
-    if (document.head) document.head.appendChild(script);
+        if (document.head) document.head.appendChild(script);
+    }
+    else if (window.Chatra.restart) {
+        window.Chatra('restart');
+    }
 };
 
 
@@ -38,7 +48,7 @@ var Chatra = function (method, data) {
         window.Chatra(method, data);
     }
     else {
-        console.error("Please call Chatra('call') before calling " + method);
+        console.error("Please call Chatra('init') before calling " + method);
     }
 };
 
