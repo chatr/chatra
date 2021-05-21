@@ -3,9 +3,9 @@
      
 :triangular_flag_on_post: **This package is intended for developers.** If you just want to add Chatra to your website, check our [Installation guides](https://chatra.com/help/cms/?utm_source=npm&utm_medium=readme&utm_campaign=npm) for popular e-commerce platforms and content management systems or just [add a small code snippet](https://chatra.com/help/?utm_source=npm&utm_medium=readme&utm_campaign=npm#install) to your website.
 
-# Official Chatra module
+# Official [Chatra](https://chatra.com) module
 
-This module loads Chatra widget and passes method calls to the [Javascript API](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#methods).
+This module loads the Chatra widget and passes method calls to the [Javascript API](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#methods).
 
 Key Features:
 
@@ -45,7 +45,7 @@ let config = {
 Chatra('init', config)
 ```
 
-:triangular_flag_on_post: You can customize the chat and button appearance, localization and lots of other settings by passing `setup` to the initialization config. Please check the [Javascript API](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#api-reference) for details.
+:triangular_flag_on_post: You can customize the chat and button appearance, localization, and lots of other settings by passing `setup` to the initialization config. Please check the [Javascript API documentation](https://chatra.com/help/api/?utm_source=npm&utm_medium=readme&utm_campaign=npm#api-reference) for details.
 
 _index.js_
 ```js
@@ -87,7 +87,7 @@ We recommend calling this method in your router or page controllers.
 
 ### Updating the settings
 
-You can update the settings after initialization by calling `Chatra('init', config)` again, which will restart Chatra with new settings applied.
+You can update the settings after initialization by calling `Chatra('init', config)` again, which will restart Chatra with the new settings applied.
 
 ### Methods
 
@@ -101,4 +101,4 @@ All method calls made before Chatra finished loading are put into a queue and ex
 
 ## Contact us
 
-If you have any questions feel free to [contact us](https://chatra.com/contact-us/).
+If you have any questions, feel free to [contact us](https://chatra.com/contact-us/).
