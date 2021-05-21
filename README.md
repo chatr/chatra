@@ -1,6 +1,6 @@
 <img width="100" height="100" align="right"
      alt="Chatra logo" src="https://app.chatra.io/static/win-tile.png" />
-     
+
 :triangular_flag_on_post: **This package is intended for developers.** If you just want to add Chatra to your website, check our [Installation guides](https://chatra.com/help/cms/?utm_source=npm&utm_medium=readme&utm_campaign=npm) for popular e-commerce platforms and content management systems or just [add a small code snippet](https://chatra.com/help/?utm_source=npm&utm_medium=readme&utm_campaign=npm#install) to your website.
 
 # Official [Chatra](https://chatra.com) module
@@ -65,7 +65,7 @@ let config = {
     integration: {
         name: 'Cowardly Lion',
         email: 'cowardly_lion@gmail.com',
-        
+
         /* any number of custom properties */
         'What does he do': 'Goes to Oz with his friends'
     },
